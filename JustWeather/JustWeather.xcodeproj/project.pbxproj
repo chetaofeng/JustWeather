@@ -1,527 +1,1278 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		CB618ABC1D00888D0058091F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB618ABB1D00888D0058091F /* AppDelegate.swift */; };
-		CB618ABE1D00888D0058091F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB618ABD1D00888D0058091F /* ViewController.swift */; };
-		CB618AC11D00888D0058091F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB618ABF1D00888D0058091F /* Main.storyboard */; };
-		CB618AC41D00888D0058091F /* JustWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB618AC21D00888D0058091F /* JustWeather.xcdatamodeld */; };
-		CB618AC61D00888D0058091F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB618AC51D00888D0058091F /* Assets.xcassets */; };
-		CB618AC91D00888D0058091F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB618AC71D00888D0058091F /* LaunchScreen.storyboard */; };
-		CB618AD41D00888D0058091F /* JustWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB618AD31D00888D0058091F /* JustWeatherTests.swift */; };
-		CB618ADF1D00888D0058091F /* JustWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB618ADE1D00888D0058091F /* JustWeatherUITests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CB618AD01D00888D0058091F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB618AB01D00888D0058091F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB618AB71D00888D0058091F;
-			remoteInfo = JustWeather;
-		};
-		CB618ADB1D00888D0058091F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB618AB01D00888D0058091F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB618AB71D00888D0058091F;
-			remoteInfo = JustWeather;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		CB618AB81D00888D0058091F /* JustWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB618ABB1D00888D0058091F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB618ABD1D00888D0058091F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB618AC01D00888D0058091F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB618AC31D00888D0058091F /* JustWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JustWeather.xcdatamodel; sourceTree = "<group>"; };
-		CB618AC51D00888D0058091F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB618AC81D00888D0058091F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CB618ACA1D00888D0058091F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB618ACF1D00888D0058091F /* JustWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB618AD31D00888D0058091F /* JustWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustWeatherTests.swift; sourceTree = "<group>"; };
-		CB618AD51D00888D0058091F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB618ADA1D00888D0058091F /* JustWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB618ADE1D00888D0058091F /* JustWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustWeatherUITests.swift; sourceTree = "<group>"; };
-		CB618AE01D00888D0058091F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		CB618AB51D00888D0058091F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB618ACC1D00888D0058091F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB618AD71D00888D0058091F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		CB618AAF1D00888D0058091F = {
-			isa = PBXGroup;
-			children = (
-				CB618ABA1D00888D0058091F /* JustWeather */,
-				CB618AD21D00888D0058091F /* JustWeatherTests */,
-				CB618ADD1D00888D0058091F /* JustWeatherUITests */,
-				CB618AB91D00888D0058091F /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		CB618AB91D00888D0058091F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CB618AB81D00888D0058091F /* JustWeather.app */,
-				CB618ACF1D00888D0058091F /* JustWeatherTests.xctest */,
-				CB618ADA1D00888D0058091F /* JustWeatherUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CB618ABA1D00888D0058091F /* JustWeather */ = {
-			isa = PBXGroup;
-			children = (
-				CB618ABB1D00888D0058091F /* AppDelegate.swift */,
-				CB618ABD1D00888D0058091F /* ViewController.swift */,
-				CB618ABF1D00888D0058091F /* Main.storyboard */,
-				CB618AC51D00888D0058091F /* Assets.xcassets */,
-				CB618AC71D00888D0058091F /* LaunchScreen.storyboard */,
-				CB618ACA1D00888D0058091F /* Info.plist */,
-				CB618AC21D00888D0058091F /* JustWeather.xcdatamodeld */,
-			);
-			path = JustWeather;
-			sourceTree = "<group>";
-		};
-		CB618AD21D00888D0058091F /* JustWeatherTests */ = {
-			isa = PBXGroup;
-			children = (
-				CB618AD31D00888D0058091F /* JustWeatherTests.swift */,
-				CB618AD51D00888D0058091F /* Info.plist */,
-			);
-			path = JustWeatherTests;
-			sourceTree = "<group>";
-		};
-		CB618ADD1D00888D0058091F /* JustWeatherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CB618ADE1D00888D0058091F /* JustWeatherUITests.swift */,
-				CB618AE01D00888D0058091F /* Info.plist */,
-			);
-			path = JustWeatherUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		CB618AB71D00888D0058091F /* JustWeather */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB618AE31D00888D0058091F /* Build configuration list for PBXNativeTarget "JustWeather" */;
-			buildPhases = (
-				CB618AB41D00888D0058091F /* Sources */,
-				CB618AB51D00888D0058091F /* Frameworks */,
-				CB618AB61D00888D0058091F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JustWeather;
-			productName = JustWeather;
-			productReference = CB618AB81D00888D0058091F /* JustWeather.app */;
-			productType = "com.apple.product-type.application";
-		};
-		CB618ACE1D00888D0058091F /* JustWeatherTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB618AE61D00888D0058091F /* Build configuration list for PBXNativeTarget "JustWeatherTests" */;
-			buildPhases = (
-				CB618ACB1D00888D0058091F /* Sources */,
-				CB618ACC1D00888D0058091F /* Frameworks */,
-				CB618ACD1D00888D0058091F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB618AD11D00888D0058091F /* PBXTargetDependency */,
-			);
-			name = JustWeatherTests;
-			productName = JustWeatherTests;
-			productReference = CB618ACF1D00888D0058091F /* JustWeatherTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CB618AD91D00888D0058091F /* JustWeatherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB618AE91D00888D0058091F /* Build configuration list for PBXNativeTarget "JustWeatherUITests" */;
-			buildPhases = (
-				CB618AD61D00888D0058091F /* Sources */,
-				CB618AD71D00888D0058091F /* Frameworks */,
-				CB618AD81D00888D0058091F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB618ADC1D00888D0058091F /* PBXTargetDependency */,
-			);
-			name = JustWeatherUITests;
-			productName = JustWeatherUITests;
-			productReference = CB618ADA1D00888D0058091F /* JustWeatherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		CB618AB01D00888D0058091F /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = gsunis;
-				TargetAttributes = {
-					CB618AB71D00888D0058091F = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = W7V5DQXFK8;
-					};
-					CB618ACE1D00888D0058091F = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = W7V5DQXFK8;
-						TestTargetID = CB618AB71D00888D0058091F;
-					};
-					CB618AD91D00888D0058091F = {
-						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = W7V5DQXFK8;
-						TestTargetID = CB618AB71D00888D0058091F;
-					};
-				};
-			};
-			buildConfigurationList = CB618AB31D00888D0058091F /* Build configuration list for PBXProject "JustWeather" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = CB618AAF1D00888D0058091F;
-			productRefGroup = CB618AB91D00888D0058091F /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CB618AB71D00888D0058091F /* JustWeather */,
-				CB618ACE1D00888D0058091F /* JustWeatherTests */,
-				CB618AD91D00888D0058091F /* JustWeatherUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		CB618AB61D00888D0058091F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB618AC91D00888D0058091F /* LaunchScreen.storyboard in Resources */,
-				CB618AC61D00888D0058091F /* Assets.xcassets in Resources */,
-				CB618AC11D00888D0058091F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB618ACD1D00888D0058091F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB618AD81D00888D0058091F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		CB618AB41D00888D0058091F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB618ABE1D00888D0058091F /* ViewController.swift in Sources */,
-				CB618AC41D00888D0058091F /* JustWeather.xcdatamodeld in Sources */,
-				CB618ABC1D00888D0058091F /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB618ACB1D00888D0058091F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB618AD41D00888D0058091F /* JustWeatherTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB618AD61D00888D0058091F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB618ADF1D00888D0058091F /* JustWeatherUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CB618AD11D00888D0058091F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB618AB71D00888D0058091F /* JustWeather */;
-			targetProxy = CB618AD01D00888D0058091F /* PBXContainerItemProxy */;
-		};
-		CB618ADC1D00888D0058091F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB618AB71D00888D0058091F /* JustWeather */;
-			targetProxy = CB618ADB1D00888D0058091F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CB618ABF1D00888D0058091F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB618AC01D00888D0058091F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CB618AC71D00888D0058091F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB618AC81D00888D0058091F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		CB618AE11D00888D0058091F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CB618AE21D00888D0058091F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CB618AE41D00888D0058091F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JustWeather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.JustWeather;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		CB618AE51D00888D0058091F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JustWeather/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.JustWeather;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		CB618AE71D00888D0058091F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = JustWeatherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.JustWeatherTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustWeather.app/JustWeather";
-			};
-			name = Debug;
-		};
-		CB618AE81D00888D0058091F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = JustWeatherTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.JustWeatherTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustWeather.app/JustWeather";
-			};
-			name = Release;
-		};
-		CB618AEA1D00888D0058091F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = JustWeatherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.JustWeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = JustWeather;
-			};
-			name = Debug;
-		};
-		CB618AEB1D00888D0058091F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = JustWeatherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gsunis.JustWeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = JustWeather;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		CB618AB31D00888D0058091F /* Build configuration list for PBXProject "JustWeather" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB618AE11D00888D0058091F /* Debug */,
-				CB618AE21D00888D0058091F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB618AE31D00888D0058091F /* Build configuration list for PBXNativeTarget "JustWeather" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB618AE41D00888D0058091F /* Debug */,
-				CB618AE51D00888D0058091F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		CB618AE61D00888D0058091F /* Build configuration list for PBXNativeTarget "JustWeatherTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB618AE71D00888D0058091F /* Debug */,
-				CB618AE81D00888D0058091F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		CB618AE91D00888D0058091F /* Build configuration list for PBXNativeTarget "JustWeatherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB618AEA1D00888D0058091F /* Debug */,
-				CB618AEB1D00888D0058091F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CB618AC21D00888D0058091F /* JustWeather.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				CB618AC31D00888D0058091F /* JustWeather.xcdatamodel */,
-			);
-			currentVersion = CB618AC31D00888D0058091F /* JustWeather.xcdatamodel */;
-			path = JustWeather.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = CB618AB01D00888D0058091F /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>39C8DF7317933A3E046425A3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BCFF59D8428818C2305AF46</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3BCFF59D8428818C2305AF46</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6A81FAA1F9749AC544C73851</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7493D4262C35E32CCEF92A50</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A088E9439A7AEB374606CB0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3BCFF59D8428818C2305AF46</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8396B4AB7F3B89622F151125</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9BB20AB82CECFF6B1F1F119F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>A7445D3C62E6BAD719F76119</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C7C262C4504D5FC29C1BFB42</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6A81FAA1F9749AC544C73851</string>
+				<string>7493D4262C35E32CCEF92A50</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AAF1D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AF51D008D910058091F</string>
+				<string>CB618ABA1D00888D0058091F</string>
+				<string>CB618AD21D00888D0058091F</string>
+				<string>CB618ADD1D00888D0058091F</string>
+				<string>CB618AB91D00888D0058091F</string>
+				<string>C7C262C4504D5FC29C1BFB42</string>
+				<string>7A088E9439A7AEB374606CB0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AB01D00888D0058091F</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>gsunis</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>CB618AB71D00888D0058091F</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>DevelopmentTeam</key>
+						<string>W7V5DQXFK8</string>
+					</dict>
+					<key>CB618ACE1D00888D0058091F</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>DevelopmentTeam</key>
+						<string>W7V5DQXFK8</string>
+						<key>TestTargetID</key>
+						<string>CB618AB71D00888D0058091F</string>
+					</dict>
+					<key>CB618AD91D00888D0058091F</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>DevelopmentTeam</key>
+						<string>W7V5DQXFK8</string>
+						<key>TestTargetID</key>
+						<string>CB618AB71D00888D0058091F</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>CB618AB31D00888D0058091F</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>CB618AAF1D00888D0058091F</string>
+			<key>productRefGroup</key>
+			<string>CB618AB91D00888D0058091F</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>CB618AB71D00888D0058091F</string>
+				<string>CB618ACE1D00888D0058091F</string>
+				<string>CB618AD91D00888D0058091F</string>
+			</array>
+		</dict>
+		<key>CB618AB31D00888D0058091F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CB618AE11D00888D0058091F</string>
+				<string>CB618AE21D00888D0058091F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CB618AB41D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CB618ABE1D00888D0058091F</string>
+				<string>CB618AC41D00888D0058091F</string>
+				<string>CB618AEE1D008B530058091F</string>
+				<string>CB618AEF1D008B530058091F</string>
+				<string>CB618AF21D008C750058091F</string>
+				<string>CB618ABC1D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618AB51D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>39C8DF7317933A3E046425A3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618AB61D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CB618AC91D00888D0058091F</string>
+				<string>CB618AC61D00888D0058091F</string>
+				<string>CB618AF61D008D910058091F</string>
+				<string>CB618AC11D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618AB71D00888D0058091F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CB618AE31D00888D0058091F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>8396B4AB7F3B89622F151125</string>
+				<string>CB618AB41D00888D0058091F</string>
+				<string>CB618AB51D00888D0058091F</string>
+				<string>CB618AB61D00888D0058091F</string>
+				<string>9BB20AB82CECFF6B1F1F119F</string>
+				<string>A7445D3C62E6BAD719F76119</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>JustWeather</string>
+			<key>productName</key>
+			<string>JustWeather</string>
+			<key>productReference</key>
+			<string>CB618AB81D00888D0058091F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>CB618AB81D00888D0058091F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>JustWeather.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CB618AB91D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AB81D00888D0058091F</string>
+				<string>CB618ACF1D00888D0058091F</string>
+				<string>CB618ADA1D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618ABA1D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618ABB1D00888D0058091F</string>
+				<string>CB618ABD1D00888D0058091F</string>
+				<string>CB618AF01D008BA80058091F</string>
+				<string>CB618ABF1D00888D0058091F</string>
+				<string>CB618AC51D00888D0058091F</string>
+				<string>CB618AC71D00888D0058091F</string>
+				<string>CB618ACA1D00888D0058091F</string>
+				<string>CB618AC21D00888D0058091F</string>
+				<string>CB618AF71D0090580058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>JustWeather</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618ABB1D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>AppDelegate.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618ABC1D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618ABB1D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618ABD1D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618ABE1D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618ABD1D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618ABF1D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AC01D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AC01D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AC11D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618ABF1D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AC21D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AC31D00888D0058091F</string>
+			</array>
+			<key>currentVersion</key>
+			<string>CB618AC31D00888D0058091F</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>JustWeather.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>CB618AC31D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>JustWeather.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AC41D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AC21D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AC51D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AC61D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AC51D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AC71D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AC81D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AC81D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AC91D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AC71D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618ACA1D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618ACB1D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CB618AD41D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618ACC1D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618ACD1D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618ACE1D00888D0058091F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CB618AE61D00888D0058091F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CB618ACB1D00888D0058091F</string>
+				<string>CB618ACC1D00888D0058091F</string>
+				<string>CB618ACD1D00888D0058091F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CB618AD11D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>JustWeatherTests</string>
+			<key>productName</key>
+			<string>JustWeatherTests</string>
+			<key>productReference</key>
+			<string>CB618ACF1D00888D0058091F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>CB618ACF1D00888D0058091F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>JustWeatherTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CB618AD01D00888D0058091F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>CB618AB01D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CB618AB71D00888D0058091F</string>
+			<key>remoteInfo</key>
+			<string>JustWeather</string>
+		</dict>
+		<key>CB618AD11D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>CB618AB71D00888D0058091F</string>
+			<key>targetProxy</key>
+			<string>CB618AD01D00888D0058091F</string>
+		</dict>
+		<key>CB618AD21D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AD31D00888D0058091F</string>
+				<string>CB618AD51D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>JustWeatherTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AD31D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>JustWeatherTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AD41D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AD31D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AD51D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AD61D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CB618ADF1D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618AD71D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618AD81D00888D0058091F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CB618AD91D00888D0058091F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CB618AE91D00888D0058091F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CB618AD61D00888D0058091F</string>
+				<string>CB618AD71D00888D0058091F</string>
+				<string>CB618AD81D00888D0058091F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CB618ADC1D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>JustWeatherUITests</string>
+			<key>productName</key>
+			<string>JustWeatherUITests</string>
+			<key>productReference</key>
+			<string>CB618ADA1D00888D0058091F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>CB618ADA1D00888D0058091F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>JustWeatherUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CB618ADB1D00888D0058091F</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>CB618AB01D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CB618AB71D00888D0058091F</string>
+			<key>remoteInfo</key>
+			<string>JustWeather</string>
+		</dict>
+		<key>CB618ADC1D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>CB618AB71D00888D0058091F</string>
+			<key>targetProxy</key>
+			<string>CB618ADB1D00888D0058091F</string>
+		</dict>
+		<key>CB618ADD1D00888D0058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618ADE1D00888D0058091F</string>
+				<string>CB618AE01D00888D0058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>JustWeatherUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618ADE1D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>JustWeatherUITests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618ADF1D00888D0058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618ADE1D00888D0058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AE01D00888D0058091F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AE11D00888D0058091F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CB618AE21D00888D0058091F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CB618AE31D00888D0058091F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CB618AE41D00888D0058091F</string>
+				<string>CB618AE51D00888D0058091F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CB618AE41D00888D0058091F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6A81FAA1F9749AC544C73851</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>JustWeather/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.gsunis.JustWeather</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CB618AE51D00888D0058091F</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7493D4262C35E32CCEF92A50</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>JustWeather/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.gsunis.JustWeather</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CB618AE61D00888D0058091F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CB618AE71D00888D0058091F</string>
+				<string>CB618AE81D00888D0058091F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CB618AE71D00888D0058091F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>JustWeatherTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.gsunis.JustWeatherTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/JustWeather.app/JustWeather</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CB618AE81D00888D0058091F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>JustWeatherTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.gsunis.JustWeatherTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/JustWeather.app/JustWeather</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CB618AE91D00888D0058091F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CB618AEA1D00888D0058091F</string>
+				<string>CB618AEB1D00888D0058091F</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CB618AEA1D00888D0058091F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>JustWeatherUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.gsunis.JustWeatherUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>JustWeather</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CB618AEB1D00888D0058091F</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>JustWeatherUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.gsunis.JustWeatherUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>JustWeather</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CB618AEC1D008B530058091F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Result.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AED1D008B530058091F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Weather.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AEE1D008B530058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AEC1D008B530058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AEF1D008B530058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AED1D008B530058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AF01D008BA80058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AEC1D008B530058091F</string>
+				<string>CB618AED1D008B530058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Modal</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AF11D008C750058091F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NetworkHelper.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AF21D008C750058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AF11D008C750058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AF51D008D910058091F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Podfile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB618AF61D008D910058091F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CB618AF51D008D910058091F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CB618AF71D0090580058091F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CB618AF11D008C750058091F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Helper</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>CB618AB01D00888D0058091F</string>
+</dict>
+</plist>
