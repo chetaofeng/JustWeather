@@ -44,8 +44,7 @@ class WeatherTableViewController: UITableViewController {
                 })
             }
             
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = false //显示菊花显示条
-            
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false //隐藏菊花显示条
         }
     }
 
@@ -82,7 +81,7 @@ class WeatherTableViewController: UITableViewController {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("headerCell",forIndexPath: indexPath) as! HeaderCell
             cell.labelCity.text = weather.citynm
-            cell.labelTemp.text = weather.tempHigh
+            cell.labelTemp.text = weather.tempHigh + "℃"
             cell.labelWether.text = weather.weather
             return cell
         case 1:
@@ -96,12 +95,12 @@ class WeatherTableViewController: UITableViewController {
             cell.labelWeek.text =  result.week
             let data = NSData(contentsOfURL: NSURL(string: result.weatherIcon)!)!
             cell.imageViewWeather.image = UIImage(data: data)
-            cell.labelHighTemp.text = result.tempHigh
-            cell.labelLowTemp.text = result.tempLow
+            cell.labelHighTemp.text = result.tempHigh + "℃"
+            cell.labelLowTemp.text = result.tempLow + "℃"
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("briefCell",forIndexPath: indexPath) as! BriefCell
-            cell.labelBrief.text = "\(weather.weather).最高温:\(weather.tempHigh),最低温:\(weather.tempLow)"
+            cell.labelBrief.text = "\(weather.weather).最高温:\(weather.tempHigh)℃,最低温:\(weather.tempLow)℃"
             return cell
         case 3:
             let cell = tableView.dequeueReusableCellWithIdentifier("attachCell",forIndexPath: indexPath) as! AttachCell
