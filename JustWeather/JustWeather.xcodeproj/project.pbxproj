@@ -16,6 +16,7 @@
 		CB3B70A31D0EA60D002D6437 /* BriefCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3B70A11D0EA60D002D6437 /* BriefCell.xib */; };
 		CB3B70A61D0EA9CE002D6437 /* AttachCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B70A41D0EA9CE002D6437 /* AttachCell.swift */; };
 		CB3B70A71D0EA9CE002D6437 /* AttachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3B70A51D0EA9CE002D6437 /* AttachCell.xib */; };
+		CB3B70A91D0EB29E002D6437 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3B70A81D0EB29E002D6437 /* WeatherTableViewController.swift */; };
 		CB618ABC1D00888D0058091F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB618ABB1D00888D0058091F /* AppDelegate.swift */; };
 		CB618ABE1D00888D0058091F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB618ABD1D00888D0058091F /* ViewController.swift */; };
 		CB618AC11D00888D0058091F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB618ABF1D00888D0058091F /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		CB3B70A11D0EA60D002D6437 /* BriefCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BriefCell.xib; sourceTree = "<group>"; };
 		CB3B70A41D0EA9CE002D6437 /* AttachCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachCell.swift; sourceTree = "<group>"; };
 		CB3B70A51D0EA9CE002D6437 /* AttachCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachCell.xib; sourceTree = "<group>"; };
+		CB3B70A81D0EB29E002D6437 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		CB618AB81D00888D0058091F /* JustWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB618ABB1D00888D0058091F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB618ABD1D00888D0058091F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				CB3B70A01D0EA60D002D6437 /* BriefCell.swift */,
 				CB3B709C1D0EA408002D6437 /* WeekCell.swift */,
 				CB3B70961D0EA0CC002D6437 /* HeaderCell.swift */,
+				CB3B70A81D0EB29E002D6437 /* WeatherTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				CB618AC41D00888D0058091F /* JustWeather.xcdatamodeld in Sources */,
 				CB618AEE1D008B530058091F /* Result.swift in Sources */,
 				CB3B70A61D0EA9CE002D6437 /* AttachCell.swift in Sources */,
+				CB3B70A91D0EB29E002D6437 /* WeatherTableViewController.swift in Sources */,
 				CB618AEF1D008B530058091F /* Weather.swift in Sources */,
 				CB618AF21D008C750058091F /* NetworkHelper.swift in Sources */,
 				CB3B709E1D0EA408002D6437 /* WeekCell.swift in Sources */,

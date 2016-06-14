@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Weather Table View Controller-->
         <scene sceneID="XNq-I2-6tt">
             <objects>
-                <tableViewController id="eou-XT-pfj" sceneMemberID="viewController">
+                <tableViewController id="eou-XT-pfj" customClass="WeatherTableViewController" customModule="JustWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="FY1-TX-Usi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
